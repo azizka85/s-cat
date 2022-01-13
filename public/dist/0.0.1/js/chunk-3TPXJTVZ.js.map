@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/client/views/components/auth-service-component.js"],
+  "sourcesContent": ["const { context } = require('../../globals');\n\nconst { DEFAULT_LANGUAGE } = require('../../../globals');\n\nclass AuthServiceComponent {\n  titleElem = null;\n\n  githubBtn = null;\n\n  async init(view, firstTime) {\n    this.titleElem = view.elem?.querySelector('[data-title=\"auth-service\"]') || null;\n\n    this.githubBtn = view.elem?.querySelector('[data-button=\"auth-service-github\"]') || null;\n  }\n\n  async load(lang, page, firstLoad) {\n    if(this.titleElem) {\n      this.titleElem.textContent = context.tr('Or use the service');\n    }\n\n    const langQuery = lang === DEFAULT_LANGUAGE ? '' : `?lang=${lang}`;\n\n    if(this.githubBtn) {\n      this.githubBtn.setAttribute('href', `/auth/service/github${langQuery}`);\n    }\n  }\n}\n\nmodule.exports = {\n  AuthServiceComponent\n};\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA,QAAM,EAAE,YAAY;AAEpB,QAAM,EAAE,qBAAqB;AAE7B,qCAA2B;AAAA,MACzB,YAAY;AAAA,MAEZ,YAAY;AAAA,YAEN,KAAK,MAAM,WAAW;AAC1B,aAAK,YAAY,KAAK,MAAM,cAAc,kCAAkC;AAE5E,aAAK,YAAY,KAAK,MAAM,cAAc,0CAA0C;AAAA;AAAA,YAGhF,KAAK,MAAM,MAAM,WAAW;AAChC,YAAG,KAAK,WAAW;AACjB,eAAK,UAAU,cAAc,QAAQ,GAAG;AAAA;AAG1C,cAAM,YAAY,SAAS,mBAAmB,KAAK,SAAS;AAE5D,YAAG,KAAK,WAAW;AACjB,eAAK,UAAU,aAAa,QAAQ,uBAAuB;AAAA;AAAA;AAAA;AAKjE,WAAO,UAAU;AAAA,MACf;AAAA;AAAA;AAAA;",
+  "names": []
+}

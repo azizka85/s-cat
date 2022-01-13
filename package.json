@@ -1,0 +1,23 @@
+{
+  "name": "s-cat",
+  "version": "0.0.1",
+  "description": "Application of catalog of services",
+  "scripts": {
+    "test": "jest",
+    "build": "node build.mjs",
+    "start": "node start.mjs",
+    "dev": "nodemon serve.mjs"
+  },
+  "keywords": [
+    "Dashboard",
+    "JavaScript"
+  ],
+  "author": "Aziz Kudaikulov",
+  "license": "MIT",
+  "dependencies": {
+    "@azizka/i18n": "^1.0.0",
+    "@azizka/router": "^1.2.0",
+    "dotenv": "^11.0.0",
+    "ejs": "^3.1.6"
+  }
+}
