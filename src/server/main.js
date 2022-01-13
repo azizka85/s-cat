@@ -4,7 +4,7 @@ const { fragment, query } = require('./utils');
 
 const app = require('./app');
 
-const port = parseInt(process.env.NODE_ENV || '3000');
+const port = parseInt(process.env.PORT || '3000');
 
 const server = http.createServer((req, res) => {
   const state = {
