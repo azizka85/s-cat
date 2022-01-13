@@ -4,7 +4,7 @@
   "description": "Application of catalog of services",
   "scripts": {
     "test": "jest",
-    "build": "node build.mjs",
+    "build:dev": "node build.mjs",
     "start": "node start.mjs",
     "dev": "nodemon serve.mjs"
   },
