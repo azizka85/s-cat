@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../src/locales/en.js"],
-  "sourcesContent": ["module.exports = {\n  values: {\n    \"My Routes\": \"My Routes\",\n    \"Sign In\": \"Sign In\",\n    \"Sign Up\": \"Sign Up\",\n    \"Sign In/Up\": \"Sign In/Up\",\n    \"Sign Out\": \"Sign Out\",\n    \"Name\": \"Name\",\n    \"Password\": \"Password\",    \n    \"Photo\": \"Photo\",\n    \"Cancel\": \"Cancel\",\n    \"Or use the service\": \"Or use the service\",\n    \"Auth service\": \"Auth service\"\n  }\n};\n"],
-  "mappings": ";;;;;AAAA;AAAA;AAAA,WAAO,UAAU;AAAA,MACf,QAAQ;AAAA,QACN,aAAa;AAAA,QACb,WAAW;AAAA,QACX,WAAW;AAAA,QACX,cAAc;AAAA,QACd,YAAY;AAAA,QACZ,QAAQ;AAAA,QACR,YAAY;AAAA,QACZ,SAAS;AAAA,QACT,UAAU;AAAA,QACV,sBAAsB;AAAA,QACtB,gBAAgB;AAAA;AAAA;AAAA;AAAA;",
-  "names": []
-}

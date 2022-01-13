@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../src/client/data/scroll.js"],
-  "sourcesContent": ["const ScrollActionTop = 'scroll-top';\nconst ScrollActionTo = 'scroll-to';\n\nconst ScrollEventType = 'content-scrolled';\n\nconst SCROLL_THRESHOLD = 5;\n\nmodule.exports = {\n  ScrollActionTop,\n  ScrollActionTo,\n\n  ScrollEventType,\n\n  SCROLL_THRESHOLD\n};\n"],
-  "mappings": ";;;;;AAAA;AAAA;AAAA,QAAM,kBAAkB;AACxB,QAAM,iBAAiB;AAEvB,QAAM,kBAAkB;AAExB,QAAM,mBAAmB;AAEzB,WAAO,UAAU;AAAA,MACf;AAAA,MACA;AAAA,MAEA;AAAA,MAEA;AAAA;AAAA;AAAA;",
-  "names": []
-}
