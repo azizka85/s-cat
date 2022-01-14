@@ -4,10 +4,9 @@ const require = createRequire(import.meta.url);
 
 const { build } = require('./src/compiler/bundler');
 
-const { dev } = require('./src/server/init-environment');
 const { version } = require('./package.json');
 
-await build(version, dev);
+await build(version, true);
 
 require('./src/server/main');
 

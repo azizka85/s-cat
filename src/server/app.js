@@ -13,7 +13,7 @@ const { checkStaticResponse } = require('./utils');
 
 const { PAGE_ROOT } = require('../globals');
 
-const { dev } = require('./init-environment');
+require('./init-environment');
 
 const app = new Router({
   root: PAGE_ROOT,
