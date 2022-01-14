@@ -31,8 +31,8 @@ async function build(version, dev) {
   
   console.log('client - ', clientResult);
 
-  const compress = !dev ? '--style=compressed' : '';
-  const sourceMap = dev ? '--source-map' : '';  
+  const compress = dev ? '--style=expanded' : '--style=compressed';
+  const sourceMap = dev ? '--source-map' : '--no-source-map';  
 
   const stylesResult = execSync(`sass ${compress} ${sourceMap} ./src/client/styles/main.scss ./public/dist/${version}/css/main.css`, {
     encoding: 'utf-8'
