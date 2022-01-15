@@ -1,6 +1,6 @@
 module.exports = {
   values: {
-    "My Routes": "Менің жолдарым",
+    "Catalog of Services": "Қызметтер каталогы",
     "Sign In": "Кіру",
     "Sign Up": "Тіркелу",
     "Sign In/Up": "Кіру немесе Тіркелу",

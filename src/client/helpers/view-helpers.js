@@ -90,7 +90,7 @@ async function loadPage(lang, page, name, layoutNames, firstTime) {
   context.tr = languages[lang].translate.bind(languages[lang]);
 
   document.documentElement.lang = lang;
-  document.title = context.tr('My Routes');
+  document.title = context.tr('Catalog of Services');
 
   if(!(name in views)) {       
     const module = await import(`./views/${name}.js?time=${Date.now()}`);

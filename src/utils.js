@@ -2,6 +2,12 @@ const { trimSlashes } = require('@azizka/router');
 
 const { LANGUAGES } = require('./globals');
 
+function clearProperties(obj) {
+  for(const key of Object.keys(obj)) {
+    delete obj[key];
+  }
+}
+
 function getQueryParameters(query) {
   const parameters = [];
 
@@ -69,6 +75,8 @@ function changeLangPath(url, lang) {
 }
 
 module.exports = {
+  clearProperties,
+
   getQueryParameters,
   setQueryParameter,
   toggleQueryParameter,

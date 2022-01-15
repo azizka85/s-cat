@@ -1,6 +1,6 @@
 module.exports = {
   values: {
-    "My Routes": "My Routes",
+    "Catalog of Services": "Catalog of Services",
     "Sign In": "Sign In",
     "Sign Up": "Sign Up",
     "Sign In/Up": "Sign In/Up",

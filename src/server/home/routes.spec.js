@@ -7,7 +7,7 @@ describe('home routes test', () => {
 
     const state = {
       response: {
-        status: 200,
+        statusCode: 200,
         setHeader(name, value) {
           if(name === 'Content-Type') {
             contentType = value;
@@ -21,7 +21,7 @@ describe('home routes test', () => {
 
     await app.processUrl('', {}, state);
 
-    expect(state.response.status).toEqual(200);
+    expect(state.response.statusCode).toEqual(200);
     expect(contentExist).toBeTruthy();
     expect(contentType).toEqual('text/html;charset=UTF-8');
   });
@@ -32,7 +32,7 @@ describe('home routes test', () => {
 
     const state = {
       response: {
-        status: 200,
+        statusCode: 200,
         setHeader(name, value) {
           if(name === 'Content-Type') {
             contentType = value;
@@ -46,7 +46,7 @@ describe('home routes test', () => {
 
     await app.processUrl('ru', {}, state);
 
-    expect(state.response.status).toEqual(200);
+    expect(state.response.statusCode).toEqual(200);
     expect(contentExist).toBeTruthy();
     expect(contentType).toEqual('text/html;charset=UTF-8');
   });
@@ -57,7 +57,7 @@ describe('home routes test', () => {
 
     const state = {
       response: {
-        status: 200,
+        statusCode: 200,
         setHeader(name, value) {
           if(name === 'Content-Type') {
             contentType = value;
@@ -71,7 +71,7 @@ describe('home routes test', () => {
 
     await app.processUrl('', { ajax: '1' }, state);
 
-    expect(state.response.status).toEqual(200);
+    expect(state.response.statusCode).toEqual(200);
     expect(contentExist).toBeTruthy();
     expect(contentType).toEqual('application/json;charset=UTF-8');
   });
