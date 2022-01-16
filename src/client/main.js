@@ -4,7 +4,6 @@ const { loadPage } = require('./helpers/view-helpers');
 
 const { localeRoute } = require('../utils');
 
-
 const { router, routeNavigator } = require('./globals');
 const { DEFAULT_LANGUAGE } = require('../globals');
 

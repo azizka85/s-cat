@@ -4,6 +4,7 @@ const { HomePage } = require('./home-page');
 const { MainLayout } = require('./layouts/main-layout');
 
 const { fetchMock } = require('../mocks/fetch-mock');
+
 const { LocationMock } = require('@azizka/router');
 
 const { clearProperties } = require('../../utils');
@@ -19,6 +20,7 @@ describe('HomePage test', () => {
     global.document = dom.window.document;
 
     global.location = new LocationMock();
+    
     location.pathname = '/';
     location.search = '';  
 

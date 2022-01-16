@@ -6,6 +6,7 @@ const { SignUpPage } = require('../sign-up-page');
 const { DefaultLayout } = require('./default-layout');
 
 const { fetchMock } = require('../../mocks/fetch-mock');
+
 const { LocationMock } = require('@azizka/router');
 
 describe('DefaultLayout test', () => {

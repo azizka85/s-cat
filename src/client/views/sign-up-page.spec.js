@@ -3,6 +3,7 @@ const { JSDOM } = require('jsdom');
 const { SignUpPage } = require('./sign-up-page');
 
 const { fetchMock } = require('../mocks/fetch-mock');
+
 const { LocationMock } = require('@azizka/router');
 
 const locales = require('../../server/helpers/locale-helpers');
@@ -18,6 +19,7 @@ describe('SignUpPage test', () => {
     global.document = dom.window.document;
   
     global.location = new LocationMock();
+    
     location.pathname = '/ru/sign-up';
     location.search = '';  
   

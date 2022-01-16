@@ -19,6 +19,7 @@ describe('AuthServiceComponent test', () => {
     global.document = dom.window.document;
   
     global.location = new LocationMock();
+    
     location.pathname = '/ru/sign-in';
     location.search = '';  
   

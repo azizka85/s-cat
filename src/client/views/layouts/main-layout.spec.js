@@ -4,6 +4,7 @@ const { MainLayout } = require('./main-layout');
 const { HomePage } = require('../home-page');
 
 const { fetchMock } = require('../../mocks/fetch-mock');
+
 const { LocationMock } = require('@azizka/router');
 const { HistoryMock } = require('@azizka/router');
 
