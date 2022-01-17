@@ -25,9 +25,7 @@
   overflow: hidden;    
   transition: width 250ms linear, box-shadow 250ms linear;
 
-  &-open {
-    border-right-width: 1px;
-    border-right-style: solid;  
+  &-open { 
     width: 100%;
   }
 
